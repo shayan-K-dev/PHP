@@ -9,7 +9,7 @@ if (isset($_GET['id'])) {
 
     //filter check
     if(mysqli_num_rows($result) == 1){
-        $row = mysqli_fetch_assoc(result);
+        $row = mysqli_fetch_assoc($result);
     } else {
         echo "Role not found.";
         exit;
@@ -29,3 +29,4 @@ if (isset($_GET['id'])) {
         }
     }
 }
+?>
