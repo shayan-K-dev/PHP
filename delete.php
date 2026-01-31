@@ -1,6 +1,6 @@
 <?php
 include 'dbcon.php';
-if(isset($=GET['id'])){
+if(isset($_GET['id'])){
     $id = $_GET['id'];
 
     $delete_sql = "DELETE FROM roles WHERE $id=";
